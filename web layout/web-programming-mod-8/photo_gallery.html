@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .photo-frame{
+            display: flex;
+            flex-wrap: wrap;
+            overflow: hidden;
+            position: relative;
+            
+        }
+        .photo{
+            width: 300px;
+            height:160px;
+            border:1px solid skyblue;
+            border-radius: 5px;
+            position: relative;
+            margin:5px;
+            overflow: hidden;
+            }
+        .photo img{
+            width: 100%;
+            /* height:100% */
+           
+        }
+        .details{
+            position:absolute;
+            top:0;
+            background-color: rgba(135, 207, 235, 0.329);
+            color:black;
+            display: none;
+
+        }
+        .photo:hover .details{ 
+           display: block; 
+            transition: display;
+        }
+        .photo-frame:hover .photo{
+            transform: scale(2);
+            transition: transform 2s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <h1>Wow nice photo frame</h1>
+    <div class="photo-frame">
+        
+        <div class="photo">
+            <img src="healty-food.jpg" alt="">
+            <div class="details">
+                <h4>title of the Photo</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, expedita tenetur quisquam voluptatum sed a voluptas atque amet facere quas.</p>
+            </div>
+        </div>
+        <div class="photo">
+            <img src="healty-food.jpg" alt="">
+            <div class="details">
+                <h4>title of the Photo</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, expedita tenetur quisquam voluptatum sed a voluptas atque amet facere quas.</p>
+            </div>
+        </div>
+        <div class="photo">
+            <img src="healty-food.jpg" alt="">
+            <div class="details">
+                <h4>title of the Photo</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, expedita tenetur quisquam voluptatum sed a voluptas atque amet facere quas.</p>
+            </div>
+        </div>
+        <div class="photo">
+            <img src="healty-food.jpg" alt="">
+            <div class="details">
+                <h4>title of the Photo</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, expedita tenetur quisquam voluptatum sed a voluptas atque amet facere quas.</p>
+            </div>
+        </div>
+        <div class="photo">
+            <img src="healty-food.jpg" alt="">
+            <div class="details">
+                <h4>title of the Photo</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, expedita tenetur quisquam voluptatum sed a voluptas atque amet facere quas.</p>
+            </div>
+        </div>
+        <div class="photo">
+            <img src="healty-food.jpg" alt="">
+            <div class="details">
+                <h4>title of the Photo</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, expedita tenetur quisquam voluptatum sed a voluptas atque amet facere quas.</p>
+            </div>
+        </div>
+        <div class="photo">
+            <img src="healty-food.jpg" alt="">
+            <div class="details">
+                <h4>title of the Photo</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, expedita tenetur quisquam voluptatum sed a voluptas atque amet facere quas.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

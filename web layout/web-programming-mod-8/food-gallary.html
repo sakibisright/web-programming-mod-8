@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .photo-container{
+            position:relative;
+          
+            width: 300px;
+            height:160px;
+            
+            border:1px solid slateblue;
+            border-radius: 5px;
+
+        }
+        .photo-container:hover .details{
+            display: block;
+            transition: display 2s ease-in-out;
+        }
+        .photo{
+            position:absolute;
+            width: 300px;
+            height: 160;
+            
+        }
+        .photo img{
+            width: 100%;
+            height:160px;
+            
+        }
+        .details{
+            position:absolute;
+            top:0;
+            background-color: rgba(243, 220, 243, 0.521);
+            display:none;
+            
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Photo Gallery</h1>
+        <div class="photo-container">
+              
+            
+            
+            <div class="photo">
+                <img src="healty-food.jpg" alt="">
+                <div class="details">
+                    <h4>Name</h4>
+                    <p>Quos vel nisi voluptatem delectus animi amet accusantium accusamus autem! Corporis, distinctio et. Deleniti cupiditate magnam voluptatum recusandae dolor asperiores!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
